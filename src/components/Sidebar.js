@@ -1,41 +1,82 @@
 import React from 'react'
 import "./Sidebar.css"
-import home from "../Assets/images/icones/home.png"
-import like from "../Assets/images/icones/like.png"
-import search from "../Assets/images/icones/search.png"
-import playlist from "../Assets/images/icones/create-playlist.png"
-import library from "../Assets/images/icones/library.png"
-
+import Logo from '../Images/sp.png';
+import { FaHome, FaSearch, FaBook, FaPlus, FaHeart} from 'react-icons/fa';
 const Sidebar = () => {
   return (
-    <div className="side text-light p-3">
-      <ul className="list-unstyled">
+    <div className="sidebar py-5">
+    <div className="logo">
+      <a href="/">
+        <img src={Logo} alt="Logo" />
+      </a>
+    </div>
+
+    <div className="navigation">
+      <ul>
         <li>
-          <img className="img-fluid side-icone me-3" src={home} alt="" />
-          Home
+          <a href="/">
+            <span className="fa fa-home"><FaHome/></span>
+            <span>Home</span>
+          </a>
         </li>
+
         <li>
-          <img className="img-fluid side-icone me-3" src={search} alt="" />
-          Search
+          <a href="/">
+            <span className="fa fa-search"><FaSearch/></span>
+            <span>Search</span>
+          </a>
         </li>
-        <li className="mb-5">
-          <img className="img-fluid side-icone me-3" src={library} alt="" />
-          Library
-        </li>
+
         <li>
-          <img className="img-fluid side-icone me-3" src={playlist} alt="" />
-          Create your playlist
+          <a href="/">
+            <span className="fa fas fa-book"><FaBook /></span>
+            <span>Your Library</span>
+          </a>
         </li>
-        <li className="mb-5">
-          <img className="img-fluid side-icone me-3" src={like} alt="" />
-          Like songs
-        </li>
-        {/* <li className="mt-auto">
-          <img className="img-fluid side-icone me-3" src={langage} alt="" />
-          langage
-        </li> */}
       </ul>
     </div>
+
+    <div className="navigation">
+      <ul>
+        <li>
+          <a href="/">
+            <span className="fa fas fa-plus-square"><FaPlus/></span>
+            <span>Create Playlist</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/">
+            <span className="fa fas fa-heart"><FaHeart /></span>
+            <span>Liked Songs</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div className="policies mt-5 pt-5">
+      <ul>
+        <li>
+          <a href="/">Legal</a>
+        </li>
+        <li>
+          <a href="/">Privacy Center</a>
+        </li>
+        <li>
+          <a href="/">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="/">Cookies</a>
+        </li>
+        <li>
+          <a href="/">About</a>
+        </li>
+        <li>
+          <a href="/">Ads</a>
+        </li>
+      </ul>
+    </div>
+  </div>
   );
 }
 

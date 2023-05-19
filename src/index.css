@@ -16,5 +16,18 @@ button{
     height: 12%;
     width: 12%;
   }
+  .bg-gray {
+    background-color: rgb(23, 28, 34);
+  }
   
-  
+  body {
+    overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      
+  }
+
+  .bgdark {
+    background-color: #000000;
+  }

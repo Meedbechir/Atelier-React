@@ -1,18 +1,18 @@
 import React from 'react';
-import Logo from '../Images/sp.png'
 
 const Header = () => {
   return (
-    <header>
-    <nav className="d-flex justify-content-between">
-      <img src={Logo} alt="Img" className="imgLogo ms-5" />
-      <div className="">
-        <button className="btn text-light mx-3">Sign Up</button>
-        <button className="btn btn-light me-3 bg-white">Log In</button>
+    <header className='bgdark'>
+      <div className="container-fluid p-0 ">
+        <nav className="d-flex justify-content-center align-items-center py-4  m-0">
+          <div className="ms-auto">
+            <button className="btn text-light mx-3">Sign Up</button>
+            <button className="btn btn-light me-3 bg-white">Log In</button>
+          </div>
+        </nav>
       </div>
-    </nav>
-  </header>
-  )
+    </header>
+  );
 }
 
 export default Header;
